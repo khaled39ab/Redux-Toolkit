@@ -60,10 +60,13 @@ section{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  margin: 1rem;
 }
 
 article{
   border: 3px solid green;
+  background-color: #282c34;
+  padding: 1rem;
 }
 
 button {
@@ -75,5 +78,13 @@ button {
 }
 button:hover {
   background-color: black;
+  color: white;
+}
+
+h4{
+  color: #61dafb;
+}
+
+p{
   color: white;
 }
