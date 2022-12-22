@@ -7,7 +7,7 @@ const CounterView = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
+        <div style={{border: '5px solid black', paddingBottom: '3rem', margin: '2rem'}}>
             <h1>Counter App</h1>
             <h2>Count: {count}</h2>
             <button onClick={() => dispatch(decrement())}>Decrement</button>
