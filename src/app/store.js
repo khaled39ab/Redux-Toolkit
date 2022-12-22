@@ -6,4 +6,6 @@ const store = configureStore({
         counter: counterReducer // change counterSlice name is valid for export default
         // todos: multiple store if needed 
     }
-})
+});
+
+export default store;
