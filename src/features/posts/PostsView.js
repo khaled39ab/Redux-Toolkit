@@ -11,7 +11,7 @@ const PostsView = () => {
     }, [dispatch])
 
     return (
-        <div style={{ border: '5px solid black', paddingBottom: '3rem', margin: '2rem' }}>
+        <div >
             <h1>Posts</h1>
             {
                 isLoading && <h3>Loading.....</h3>
@@ -19,12 +19,14 @@ const PostsView = () => {
             {
                 error && <h3>{error}</h3>
             }
-            {
-                posts && posts.map(post => <article key={post.id}>
-                    <h3>{post.title}</h3>
-                    <h4>{post.body}</h4>
-                </article>)
-            }
+            <section>
+                {
+                    posts && posts.map(post => <article key={post.id}>
+                        <h4>{post.title}</h4>
+                        <p>{post.body}</p>
+                    </article>)
+                }
+            </section>
         </div>
     );
 };
